@@ -36,7 +36,7 @@ font-family: "Serif";}
           color: black;
           font-size: 30px; }
 
-      .space1 {
+      .rockyRoad {
           grid-row-start: 4;
           grid-row-end: 5;
           grid-column-start: 1;
@@ -44,47 +44,29 @@ font-family: "Serif";}
               color: black; 
           font-size: 30px;}
 
-          .space2 {
+          .footer {
           grid-row-start: 5;
           grid-row-end: 6;
           grid-column-start: 1;
-          grid-column-end: 2;
+          grid-column-end: 4;
               color: black;     font-size: 30px;}
 
-          .rockButton {
-          grid-row-start: 6;
-          grid-row-end: 7;
-          grid-column-start: 1;
-          grid-column-end: 2;
-              color: black;     font-size: 30px;}
           
-         .space3 {
+         .messageCenter {
           grid-row-start: 3;
           grid-row-end: 4;
           grid-column-start: 2;
           grid-column-end: 3;
               color: black;     font-size: 30px; }
 
-          .space4 {
+          .flatPaper {
           grid-row-start: 4;
           grid-row-end: 5;
           grid-column-start: 2;
           grid-column-end: 3;
               color: black;     font-size: 30px;}
 
-          .space5 {
-          grid-row-start: 5;
-          grid-row-end: 6;
-          grid-column-start: 2;
-          grid-column-end: 3;
-              color: black;     font-size: 30px; }
-
-          .Paper {
-          grid-row-start: 6;
-          grid-row-end: 7;
-          grid-column-start: 2;
-          grid-column-end: 3;
-              color: black;     font-size: 30px;}
+    
           
           .youSection {
           grid-row-start: 3;
@@ -94,50 +76,41 @@ font-family: "Serif";}
               color: black;     font-size: 30px;}
 
           
-          .space7 {
+          .redScissor {
           grid-row-start: 4;
           grid-row-end: 5;
           grid-column-start: 3;
           grid-column-end: 4;
               color: black;     font-size: 30px; }
 
-          
-          .space8 {
-          grid-row-start: 5;
-          grid-row-end: 6;
-          grid-column-start: 2;
-          grid-column-end: 3;
-              color: black;     font-size: 30px; }
-      
-          .scissorSection {
-          grid-row-start: 6;
-          grid-row-end: 7;
-          grid-column-start: 3;
-          grid-column-end: 4;
-              color: black;     font-size: 30px;}
-          
-      
-      
-          .messageDisplay {
-          grid-row-start: 7;
-          grid-row-end: 9;
-          grid-column-start: 1;
-          grid-column-end: 4;
-          background: #7a7979;
-          color: rgb(0, 0, 0);     font-size: 100px;
-          font-family: "Lucida Handwriting", cursive;}
-
       
         </style> 
 
         <script>
-          var scissor = 
+        var r = 1
+        var p = 2
+        var s = 3
 
-            IClick() 
-          document.getElementById(""). userpicturesrc
+            IClick() {
+            if (
+          document.getElementById("").src = 
             userpicturesrc = the pictures src
-            </script> 
-            
+           
+
+            theRoad() {
+            document.getElementById("yourMove").src = "rock.jpeg"
+    }
+
+                theRed() {
+           document.getElementById("yourMove").src = "scissor.jpeg"
+                }
+
+                theFlat() {
+           document.getElementById("yourMove").src = "paper.jpeg"
+
+            }
+                
+        </script> 
 </head>
 <body> 
   <div class = "title";> 
@@ -150,12 +123,24 @@ font-family: "Serif";}
     <img src="download.jpeg" alt= "200px" width="300px">
     </center>
   </div>
-<div class ="meSection"> 
+<div class ="meSection" id = "myMove"> 
 
 </div>
-  <div class ="YouSection"> 
+  <div class ="YouSection" id = "yourMove"> 
 
 </div>
+    <div class = "rockyRoad"> 
+        <button id = "rockButton" onclick= theRoad()> 
+        </button>
+    </div>
+    <div class = "flatPaper"> 
+        <button id = "paperButton" onclick = theFlat()> 
+        </button>
+    </div>
+     <div class = "redScissor"> 
+        <button id = "scissorButton" onclick = theRed()> 
+        </button>
+    </div>
   
 </body>
 

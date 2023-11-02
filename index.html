@@ -2,6 +2,16 @@
 <head>
 
     <style>
+        
+      body {  display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr 1fr 1fr 1fr;
+         gap: 10px;
+           }
+
+       div {
+         align-content: center;
+         }
       p {
         font-size: 40px
 font-family: "Serif";}
@@ -90,29 +100,32 @@ font-family: "Serif";}
         var r = 1
         var p = 2
         var s = 3
+        var r = Math.floor(Math.random()*3)+1;
 
-            IClick() {
-            if (
-          document.getElementById("").src = 
-            userpicturesrc = the pictures src
+            function artificialIntelligence {
+            
+            }
            
 
-            theRoad() {
-            document.getElementById("yourMove").src = "rock.jpeg"
+            function theRoad() {
+            document.getElementById("refresh").src = "rock.jpeg"
     }
 
-                theRed() {
-           document.getElementById("yourMove").src = "scissor.jpeg"
+                function theRed() {
+           document.getElementById("refresh").src = "scissor.jpeg"
                 }
 
-                theFlat() {
-           document.getElementById("yourMove").src = "paper.jpeg"
+               function theFlat() {
+           document.getElementById("refresh").src = "paper.jpeg"
 
             }
+
+            
                 
         </script> 
 </head>
 <body> 
+     
   <div class = "title";> 
 <center> <h4> Rock, Paper, Scissors...Go!</h4>
  <p> Try to Beat AI </p>
@@ -124,22 +137,27 @@ font-family: "Serif";}
     </center>
   </div>
 <div class ="meSection" id = "myMove"> 
-
+    <center> 
+<img src = "questionmark.jpeg" alt= "100px" height="100px" id = "refresh">
+        </center>
 </div>
   <div class ="YouSection" id = "yourMove"> 
 
 </div>
     <div class = "rockyRoad"> 
-        <button id = "rockButton" onclick= theRoad()> 
-        </button>
+       <center> <button id = "rockButton" onclick= "theRoad()"> 
+           <h2> Rock</h2>
+        </button> </center>
     </div>
     <div class = "flatPaper"> 
-        <button id = "paperButton" onclick = theFlat()> 
-        </button>
+      <center>  <button id = "paperButton" onclick = "theFlat(")> 
+         <h2>  Paper</h2>
+        </button> </center>
     </div>
      <div class = "redScissor"> 
-        <button id = "scissorButton" onclick = theRed()> 
-        </button>
+      <center>  <button id = "scissorButton" onclick = "theRed()"> 
+           <h2> Scissor </h2></center>
+        </button> 
     </div>
   
 </body>

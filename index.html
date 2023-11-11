@@ -149,12 +149,16 @@ else
 }
 
 function playAgain () { 
-    b = 0; 
-    c = 0; 
+    b = b*0; 
+    c = c*0; 
 document.getElementById("refresh").src = "questionmark.jpeg";
 document.getElementById("hello").src = "questionmark.jpeg"; 
 document.getElementById("msg").innerHTML = "Bye bye!"; 
-document.getElementById("uhoh").innerHTML = "Play Again."; 
+document.getElementById("uhoh").innerHTML = "Start Over"; 
+        document.getElementById("player").innerHTML = "You:" + b;
+           document.getElementById("myself").innerHTML = "Me:" + c;
+        
+        
 }
 
 </script>
@@ -166,7 +170,7 @@ document.getElementById("uhoh").innerHTML = "Play Again.";
        
  <div class="bottom">
     <button id="uhoh" onclick ="playAgain();"> 
-        Play Again </button>
+        <h5> Start Over </h5> </button>
 </div>
 
 <div class="footerup"> 
